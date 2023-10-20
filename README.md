@@ -1,6 +1,9 @@
 Frontend application live link:
 
    [PlayZone Live Site](https://play-zone-frontent.vercel.app/) 
+Admin Credential:
+email: mdshakil.khan8032@gmail.com
+password: 123456
 
 ```sh
 # Service Booking and Management Website
