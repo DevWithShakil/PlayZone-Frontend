@@ -52,7 +52,7 @@ const Feedback = () => {
                     data-aos-delay="300"
                     data-aos-duration="800"
                 >
-                    USER REVIEW
+                    USER FEEDBACK
                 </h1>
                 <p
                     className=" font-Oswald text-center font-bold sm:text-xl md:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#e6a9f5] lg:my-4 "

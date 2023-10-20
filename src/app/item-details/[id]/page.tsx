@@ -24,7 +24,7 @@ const DetailsPage = ({ params: { id } }: { params: { id: string } }) => {
                     </h1>
                 </div>
                 <LoadingData loading={isLoading} />
-                <NoData data={data} loading={isLoading} />
+                {/* <NoData data={data} loading={isLoading} /> */}
                 <div className='flex mt-5 md:p-6 h-full items-center font-reem justify-center'>
                     <div className='sm:flex gap-x-8 justify-center'>
 

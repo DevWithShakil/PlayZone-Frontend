@@ -9,7 +9,9 @@ import { useCreateOrderMutation } from '@/redux/api/bookingApi';
 import { useBookingItemQuery, useCreateBookingMutation } from '@/redux/api/bookingItemApi';
 import { getUserInfo } from '@/service/auth.service';
 import { message } from 'antd';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+
 
 
 const BookingOrder = ({ params: { id } }: { params: { id: string } }) => {
@@ -18,6 +20,7 @@ const BookingOrder = ({ params: { id } }: { params: { id: string } }) => {
     const [startTime, setStartTime] = useState<any>()
     const [endTime, setEndTime] = useState<any>()
     const [loading, setLoading] = useState<any>(false)
+    const router = useRouter()
 
     const { data, isLoading } = useBookingItemQuery(id);
 
@@ -33,8 +36,9 @@ const BookingOrder = ({ params: { id } }: { params: { id: string } }) => {
         }
         try {
             const res: any = await bookingOrder(bookingData)
-            if (res?.id) {
+            if (res) {
                 message.success("Order create successfully")
+                router.push("/items-list");
                 setLoading(false)
                 console.log(res)
             }
@@ -57,7 +61,7 @@ const BookingOrder = ({ params: { id } }: { params: { id: string } }) => {
                     </h1>
                 </div>
                 <LoadingData loading={isLoading} />
-                <NoData data={data} loading={isLoading} />
+                {/* <NoData data={data} loading={isLoading} /> */}
                 <div className='flex mt-5 max-w-[600px] w-full mx-auto items-center font-reem justify-center'>
                     <div className='!w-full'>
                         <div className='my-5'>

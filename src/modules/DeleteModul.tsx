@@ -71,8 +71,8 @@ const ModuleModule = ({ setDeleteItem, deleteItem }: any) => {
                         error && <p className='text-[#e24242]'>{error}</p>
                     }
                     <div className="flex items-center justify-center gap-3">
-                        <button onClick={handleDelete} className="btn btn-error w-[100px] text-white btn-sm">Logout</button>
-                        <label htmlFor="delete-module" className="btn btn-sm w-[100px] ">cancel</label>
+                        <button onClick={handleDelete} className="btn btn-error w-[100px] text-white btn-sm">Delete</button>
+                        <label htmlFor="delete-module" className="btn btn-sm w-[100px] ">Cancel</label>
                     </div>
                 </div>
             </div>

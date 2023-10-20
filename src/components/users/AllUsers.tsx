@@ -24,7 +24,7 @@ const AllUsers = () => {
                     ))
                 }
                 <LoadingData loading={isLoading} />
-                <NoData data={data} loading={isLoading} />
+                {/* <NoData data={data} loading={isLoading} /> */}
             </div>
         </div>
     );

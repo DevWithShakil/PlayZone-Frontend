@@ -1,47 +1,49 @@
 import { FaBasketballBall } from 'react-icons/fa';
 import { IoMdFootball } from 'react-icons/io';
 import { MdGolfCourse, MdSportsCricket, MdSportsHockey, MdSportsTennis } from 'react-icons/md';
-import image1 from "../assets/image/banner.jpg"
-import image2 from "../assets/image/booking-field2.jpeg"
-import image3 from "../assets/image/booking-fild1.jpg"
-import image4 from "../assets/image/booking-fild1.jpg"
+import football from "../assets/image/Playground/football/field-1.jpg"
+import cricket from "../assets/image/Playground/cricket/field-1.jpg"
+import tennis from "../assets/image/Playground/tennis/field-1.jpg"
+import basket from "../assets/image/Playground/basket/banner.jpg"
+import hockey from "../assets/image/Playground/hockey/field-1.jpg"
+import golf from "../assets/image/Playground/golf/field-.jpg"
 
 export const bookingCategory = [
   {
     label: "Football",
     value: <IoMdFootball />,
-    img: image1,
+    img: football,
     dsc: "Large rectangular pitch for the beautiful game of soccer."
   },
   {
     label: "Cricket",
     value: <MdSportsCricket />,
-    img: image4,
+    img: cricket,
     dsc: "Spacious field for the classic bat-and-ball game of cricket."
 
   },
   {
     label: "Tennis",
     value: <MdSportsTennis />,
-    img: image1,
+    img: tennis,
     dsc: "Tightly netted court for the precision sport of tennis."
   },
   {
     label: "Basket",
     value: <FaBasketballBall />,
-    img: image3,
+    img: basket,
     dsc: "Hardwood court for the fast-paced game of basketball."
   },
   {
     label: "Hockey",
     value: <MdSportsHockey />,
-    img: image2,
+    img: hockey,
     dsc: "Spacious field for the classic bat-and-ball game of cricket."
   },
   {
     label: "Golf",
     value: <MdGolfCourse />,
-    img: image4,
+    img: golf,
     dsc: "Court with a net for the dynamic game of volleyball."
   },
 ];
