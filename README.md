@@ -1,8 +1,15 @@
 Frontend application live link:
 
-   [PlayZone Live Site](https://play-zone-frontent.vercel.app/) 
-Admin Credential:
+[PlayZone Live Site](https://play-zone-frontent.vercel.app/)
+
+##Admin Credential:
+
+##admin:
 email: mdshakil.khan8032@gmail.com
+password: 123456
+
+##Super-admin
+email: rafi@gmail.com
 password: 123456
 
 ```sh
@@ -124,5 +131,6 @@ Our app about Service Booking and Management Website project! The application na
 
 - Adding and managing admin users with role management.
 - Profile management for super admins.
+
 
 ```
